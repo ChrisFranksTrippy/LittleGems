@@ -20,7 +20,7 @@ $(function(){
     var photoCount = Number(localStorage.photoCount);
     localStorage.photoCount = photoCount + 1;
     changeImg();
-  }, 10000);
+  }, 5000);
 
 })
 
@@ -32,6 +32,15 @@ function changeImg(){
     localStorage.photoCount = 5;
   else if (photoCount > 5)
     localStorage.photoCount = 1;
-  
-  $(img).attr('src','/img/picture' + localStorage.photoCount + '.gif');
+
+  $(img).animate({
+    opacity: 0
+  }, 500, function(){
+    $(this).attr('src','/img/picture' + localStorage.photoCount + '.gif');
+    $(this).animate({
+      opacity: 1
+    }, 500);
+  });
+
+
 }
