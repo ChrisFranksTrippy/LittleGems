@@ -1,0 +1,41 @@
+header
+  background: white
+  flex-direction: column
+  justify-content: center
+  width: 200px
+  height: 100vh
+  position: relative
+
+  img
+    position: absolute
+    width: 160px
+    top: 0px
+    left: 0px
+    padding: 20px
+
+  ul
+    list-style: none
+    text-align: center
+    padding: 0px
+
+    li
+      width: 100%
+      border-top: 1px solid black
+      padding: 25px 0px
+      transition: background-color 0.3s ease-in-out
+
+      a
+        text-decoration: none
+        font-size: 28px
+        font-weight: bold
+        width: 100%
+        color: black
+        transition: color 0.3s ease-in-out
+
+      &:last-child
+        border-bottom: 1px solid black
+
+      &:hover
+        background-color: #1c8a43
+        a
+          color: white

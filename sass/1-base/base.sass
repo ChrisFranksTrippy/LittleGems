@@ -1,0 +1,44 @@
+.addH
+  height: 100px
+  content: ""
+
+body
+  background-color: lighten(#157fa1, 20%)
+  background-color: $bg-light-green
+
+.caps
+  text-transform: uppercase
+
+.underline
+  text-decoration: underline
+
+.smaller
+  font-size: 0.8rem
+
+.hide-md
+  display: block
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  body
+    background-color: #157fa1
+    background-color: $bg-light-green
+
+  .hide-md
+    display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  body
+    background-color: darken(#157fa1, 10%)
+
+  .hide-md
+    display: block
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  body
+    background-color: darken(#157fa1, 20%)
