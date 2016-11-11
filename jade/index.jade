@@ -14,7 +14,7 @@ html
 
     link(href='/css/main.css', rel='stylesheet')
     script(src="/js/jquery-3.1.1.js")
-    script(src="/js/nav.js")
+    script(src="/js/base.js")
     script(src="/js/photo.js")
     
   body 
@@ -59,8 +59,12 @@ html
           .button.caps Read More
       
       section.photo-container 
-        a.prev <
+        .photo-action-container.prev
+          div
+            a <
         img(src="/img/picture1.gif")
-        a.next >
+        .photo-action-container.next
+          div
+            a >
         
     include ../footer.html

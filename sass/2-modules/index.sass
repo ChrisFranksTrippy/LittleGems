@@ -5,98 +5,117 @@ section.body
     width: 100%
     padding-top: 10px
 
-  section.welcome
+section.welcome
+  max-width: 100%
+  padding: 0px 10px
+
+  h1
+    margin-top: 10px
+    color: black
+
+  p
+    font-size: 20px
+    margin: 15px 0px
+
+  img.display-pic
     max-width: 100%
-    padding: 0px 10px
 
-    h1
-      margin-top: 10px
-      color: black
+section.opening
+  h1
+    display: block
+    max-width: 100%
+    text-align: center
+    background-color: $dark-green
+    color: white
+    margin: 15px 0px
 
-    p
-      font-size: 20px
-      margin: 15px 0px
+section.info
+  display: flex
+  flex-direction: column
 
-    img.display-pic
-      max-width: 100%
-
-  section.opening
-    h1
-      display: block
-      max-width: 100%
-      text-align: center
-      background-color: $dark-green
+  .box
+    > *
       color: white
-      margin: 15px 0px
 
-  section.info
+    text-align: center
+    padding: 10px 0px
+    background-color: $light-green
     display: flex
     flex-direction: column
 
-    .box
-      > *
-        color: white
+    &:nth-child(2)
+      background-color: $dark-green
 
-      text-align: center
-      padding: 10px 0px
-      background-color: $light-green
+    h2
+      text-decoration: underline
+      text-transform: uppercase
+
+    h3
+      margin: 5px 10px
+
+    .button
+      width: 70%
+      position: relative
+      top: -8px
+      left: 0px
+      margin: 15px auto
+      padding: 30px
+      cursor: pointer
+      background-color: $dark-green
+      box-shadow: 0px 8px 8px black
+      transition: top 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+
+    .pressed
+      top: 0px
+      box-shadow: 0px 0px 0px black
+
+section.photo-container
+  width: 100%
+  text-align: center
+  position: relative
+  margin-top: 15px
+
+  .photo-action-container
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    position: absolute
+    top: 0px
+    height: 100%
+    width: 50%
+
+    div
       display: flex
-      flex-direction: column
-
-      &:nth-child(2)
-        background-color: $dark-green
-
-      h2
-        text-decoration: underline
-        text-transform: uppercase
-
-      h3
-        margin: 5px 10px
-
-      .button
-        width: 70%
-        position: relative
-        top: -8px
-        left: 0px
-        margin: 15px auto
-        padding: 30px
-        background-color: $dark-green
-        box-shadow: 0px 8px 8px black
-        transition: top 0.2s ease-in-out, box-shadow 0.2s ease-in-out
-
-      .pressed
-        top: 0px
-        box-shadow: 0px 0px 0px black
-
-  section.photo-container
-    width: 100%
-    text-align: center
-    position: relative
-    margin-top: 15px
-
-    a
-      display: flex
-      flex-direction: column
       justify-content: center
       align-items: center
+      margin: 10%
+      width: 100px
+      height: 100px
 
-      position: absolute
-      top: 0px
-      height: 100%
-      width: 50%
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 30px
+        color: black
+        background-color: rgba(128, 128, 128, 0.6)
+        //border: 2px solid rgba(0, 0, 0, 0.75)
+        border-radius: 50%
+        cursor: pointer
 
-      color: red
-      font-size: 30px
+  .prev
+    left: 0px
+    justify-content: flex-start
 
-    .prev
-      left: 0px
+  .next
+    right: 0px
+    justify-content: flex-end
 
-    .next
-      right: 0px
-
-    img
-      width: 95%
-      flex-grow: 3
+  img
+    width: 95%
+    flex-grow: 3
 
 
 
