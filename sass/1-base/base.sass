@@ -1,9 +1,7 @@
-.addH
-  height: 100px
-  content: ""
-
 body
   background-color: $bg-light-green
+
+
 
 .caps
   text-transform: uppercase
@@ -14,20 +12,21 @@ body
 .smaller
   font-size: 0.8rem
 
-.hide-md
-  display: block
+
+section.body
+  //width: 100%
+  //padding: 0px 10px
+
+  > *
+    color: $dark-green
+  img.logo
+    width: 100%
+    padding-top: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-  .hide-md
-    display: none
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-  body
-    background-color: $bg-light-green
-    display: flex
-
-  .hide-md
-    display: block
