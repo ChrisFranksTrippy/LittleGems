@@ -1,63 +1,64 @@
 header
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  height: 100px
-  width: 100%
-  background-color: white
-
-  img
-    width: 100px
-    height: 90%
-    margin: auto 0px
-  div
+  .header-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 100px
     width: 100%
-    ul
+    background-color: white
+
+    img
+      width: 100px
+      height: 90%
+      margin: auto 0px
+    div
+      width: 100%
+      ul
+        display: flex
+        flex-direction: column
+        background-color: white
+        position: relative
+        top: -350px
+        left: 0px
+        list-style: none
+        text-align: center
+        margin: 0px
+        padding: 0px
+        opacity: 1
+        transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out
+
+        li
+          padding: 20px 0px
+
+          a
+            text-decoration: none
+            color: black
+            font-size: 30px
+
+      .show-nav
+        top: 20px
+        opacity: 1
+
+    .nav-toggle
+      width: 100px
+      height: 100px
       display: flex
       flex-direction: column
-      background-color: white
-      position: relative
-      top: -350px
-      left: 0px
-      list-style: none
-      text-align: center
-      margin: 0px
-      padding: 0px
-      opacity: 1
-      transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out
+      justify-content: center
+      align-items: center
+      cursor: pointer
 
-      li
-        padding: 20px 0px
+      &:hover
+        span
+          background-color: grey
 
-        a
-          text-decoration: none
-          color: black
-          font-size: 30px
-
-    .show-nav
-      top: 20px
-      opacity: 1
-
-  .nav-toggle
-    width: 100px
-    height: 100px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    cursor: pointer
-
-    &:hover
       span
-        background-color: grey
-
-    span
-      display: block
-      width: 50px
-      height: 4px
-      background-color: black
-      margin: 4px 0px
-      border-radius: 10px
+        display: block
+        width: 50px
+        height: 4px
+        background-color: black
+        margin: 4px 25px
+        border-radius: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
@@ -67,52 +68,56 @@ header
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
   header
-    position: relative
-    flex-direction: column
-    width: 160px
+    min-width: 160px
     height: 100vh
 
-    img
-      width: 90%
-      height: auto
-      margin: 10px auto
+    .header-container
+      position: fixed
+      flex-direction: column
+      width: 160px
+      height: 100vh
 
-    .nav-toggle
-      display: none
+      img
+        width: 90%
+        height: auto
+        margin: 10px auto
 
-    div
-      height: 100%
-      display: flex
-      align-items: center
-      ul
+      .nav-toggle
+        display: none
+
+      div
+        height: 100%
         display: flex
-        top: 0px
-        left: 0px
-        width: 100%
-        text-align: center
+        align-items: center
+        ul
+          display: flex
+          top: 0px
+          left: 0px
+          width: 100%
+          text-align: center
 
-        li
-          a
-            position: relative
-
-            &::after
-              content: ''
-              display: block
-              height: 2px
-              background: black
-              position: absolute
-              left: 50%
-              bottom: 0px
-              right: 50%
-              transition: left 1s ease-in-out, right 1s ease-in-out
-
-          &:hover
+          li
             a
-              color: grey
-            a::after
-              left: 0%
-              right: 0%
-              background-color: grey
+              position: relative
+
+              &::after
+                content: ''
+                display: block
+                height: 2px
+                background: black
+                position: absolute
+                left: 50%
+                bottom: 0px
+                right: 50%
+                transition: left 1s ease-in-out, right 1s ease-in-out
+
+            &:hover
+              a
+                color: grey
+              a::after
+                left: 0%
+                right: 0%
+                background-color: grey
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)

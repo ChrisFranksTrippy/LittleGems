@@ -3,7 +3,6 @@
   content: ""
 
 body
-  background-color: lighten(#157fa1, 20%)
   background-color: $bg-light-green
 
 .caps
@@ -20,10 +19,6 @@ body
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-  body
-    background-color: #157fa1
-    background-color: $bg-light-green
-
   .hide-md
     display: none
 
@@ -31,14 +26,8 @@ body
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
   body
-    background-color: darken(#157fa1, 10%)
+    background-color: $bg-light-green
+    display: flex
 
   .hide-md
     display: block
-
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-  body
-    background-color: darken(#157fa1, 20%)
