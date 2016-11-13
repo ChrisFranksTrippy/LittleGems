@@ -1,0 +1,30 @@
+//output:../contact.html
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="format-detection" content="telephone=no")
+    title Little Gems
+
+    meta(name="description" content="Welcome to Little Gems Doggy Day Care Croft Leicester Leicestershire providing home from home doggy day care and home boarding")
+    meta(name="keywords" content="Little Gems, doggy day care, Croft, Leicester, Leicestershire, puppy day care, home boarding, no kennels")
+
+    link(href='/css/main.css', rel='stylesheet')
+    script(src="/js/jquery-3.1.1.js")
+    script(src="/js/base.js")
+    script(src="/js/photo.js")
+    
+  body 
+    include ../header.html
+    
+    section.body
+      img.logo(src="/img/little-gems.png")
+      
+      section.content
+        section.contact-text
+          h1 For further information contact: Helen on 07805 547940 or email helen1230@me.com
+  
+      include ../footer.html

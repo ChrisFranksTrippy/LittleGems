@@ -470,6 +470,35 @@ section.body img.logo {
   width: 100%;
   padding-top: 10px; }
 
+/* line 21, ../sass/1-base/base.sass */
+section.prices {
+  color: white;
+  background-color: #1c8a43;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 10px; }
+  /* line 28, ../sass/1-base/base.sass */
+  section.prices h1, section.prices h2, section.prices h3, section.prices h4, section.prices h5, section.prices h6 {
+    margin: 0px;
+    margin-top: 5px; }
+  /* line 32, ../sass/1-base/base.sass */
+  section.prices h1 {
+    font-size: 4em; }
+  /* line 35, ../sass/1-base/base.sass */
+  section.prices .line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* line 2, ../sass/2-pages/index.sass */
@@ -600,6 +629,27 @@ section.testimonial {
 /* line 20, ../sass/2-pages/about.sass */
 section.img-container img {
   width: 100%; }
+
+/* line 1, ../sass/2-pages/daycare.sass */
+section.daycare-text {
+  background-color: white;
+  padding: 5px; }
+  /* line 5, ../sass/2-pages/daycare.sass */
+  section.daycare-text h1, section.daycare-text h2, section.daycare-text h3, section.daycare-text h4, section.daycare-text h5, section.daycare-text h6 {
+    margin: 0px;
+    margin-top: 5px; }
+
+/* line 1, ../sass/2-pages/bording.sass */
+section.bording-text {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/* line 1, ../sass/2-pages/contact.sass */
+section.contact-text {
+  text-align: center;
+  background-color: white;
+  padding: 10px; }
 
 /* line 2, ../sass/3-sections/header.sass */
 header .header-container {
