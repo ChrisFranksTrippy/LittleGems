@@ -468,6 +468,7 @@ section.body > * {
 /* line 17, ../sass/1-base/base.sass */
 section.body img.logo {
   width: 100%;
+  max-width: 800px;
   padding-top: 10px; }
 
 /* line 21, ../sass/1-base/base.sass */
