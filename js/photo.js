@@ -36,7 +36,7 @@ function changeImg(){
   $(img).animate({
     opacity: 0
   }, 500, function(){
-    $(this).attr('src','/img/picture' + localStorage.photoCount + '.gif');
+    $(this).attr('src','img/picture' + localStorage.photoCount + '.gif');
     $(this).animate({
       opacity: 1
     }, 500);
